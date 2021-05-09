@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f6ff;
+}
+/* genreral layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+.container {
+  margin: 120px auto 0 auto;
+}
+/* navbar */
+
+.nav-right {
+  margin-left: auto;
+}
+.active {
+  background-color: #2e3d96 !important;
+}
+a[disabled] {
+  pointer-events: none;
+}
+.nav-link {
+  padding: 20px !important;
+}
+/* footer */
+.footer {
+  width: 100%;
+  height: 60px;
+  background: #303f9f;
+  color: white;
+  margin-top: 150px;
+  padding: 8px 0px;
+}
+.footer h3 {
+  text-align: center;
+}
+/* auth pages */
+.form {
+  padding: 40px;
+}
+
+/* Progress bar */
+#nprogress .bar {
+  background: red !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px red, 0 0 5px red;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: white !important;
+  border-left-color: white !important;
+}
+
+/* Preloder */
+
+#preloder {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background-image: linear-gradient(to left, #f6f6ff, #f6f6ff, #f6f6ff);
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  border-radius: 60px;
+  animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border: 4px solid #3f51b5;
+    border-left-color: transparent;
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: 4px solid #3f51b5;
+    border-left-color: transparent;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border: 4px solid #3f51b5;
+    border-left-color: transparent;
+  }
+}
+
+/* random */
+.lead {
+  font-weight: 300 !important;
+}
+.lowerCaseButton {
+  text-transform: none;
+  margin-left: auto;
+}
+.swal2-container {
+  z-index: 10000000 !important;
+}
