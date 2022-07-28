@@ -18,7 +18,7 @@ function Login(props) {
   const schema = yup.object().shape({
     email: yup.string().required("Email is required").email("Enter a valid Email"),
     password: yup.string().required("Password is required"),
-  });
+  }); 
 
   const { register, handleSubmit, errors } = useForm({
     resolver: yupResolver(schema),

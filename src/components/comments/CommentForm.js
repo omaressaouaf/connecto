@@ -57,14 +57,7 @@ function CommentForm(props) {
         <TextField value={body} onChange={e => setBody(e.target.value)} inputRef={inputRef} variant="outlined" placeholder="Leave a comment ..." multiline rows={2} />
       </FormControl>
       <Box mt={2} />
-      <Button
-        startIcon={loading ? <Icon className="fa fa-circle-o-notch fa-spin" /> : <Icon className="fa fa-send" />}
-        disabled={loading}
-        type="submit"
-        fullWidth
-        color="primary"
-        variant="contained"
-      >
+      <Button startIcon={loading ? <Icon className="fa fa-circle-o-notch fa-spin" /> : <Icon className="fa fa-send" />} disabled={loading} type="submit" fullWidth color="primary" variant="contained">
         Submit
       </Button>
     </form>
