@@ -1,4 +1,4 @@
-## Connecto Social media Web App
+## Connecto Social media Web App - Instagram Clone
 
 [Connecto](https://www.sourceup.ma/) is a social media app that clones most of instagram basic features (Following system, Feed listing, Contacts recommndations)
 
